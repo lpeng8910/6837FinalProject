@@ -9,11 +9,11 @@ int main(int argc, char** argv) {
   if (argc < 2) {
     std::cout << "Usage: " << argv[0]
               << " PREFIX where PREFIX is "
-                 "relative to assets/assignment2"
+                 "relative to assets/final"
               << std::endl;
     std::cout << "For example, if you're trying to load "
-                 "Model1.skel, Model1.obj, and Model1.attach, run with: "
-              << argv[0] << " Model1" << std::endl;
+                 "dragon.obj, run with: "
+              << argv[0] << " dragon" << std::endl;
     return -1;
   }
   std::unique_ptr<SkeletonViewerApp> app =

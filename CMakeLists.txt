@@ -68,6 +68,10 @@ else()
 endif()
 list(APPEND external_libs glfw)
 
+# Eigen
+find_package(Eigen3 3.3 REQUIRED NO_MODULE)
+target_link_libraries(${assignment_name} Eigen3::Eigen)
+
 # GLAD
 include_directories(${external_source_dir}/glad/include)
 list(APPEND external_srcs ${external_source_dir}/glad/src/glad.c)
@@ -80,6 +84,14 @@ find_package(
     NO_DEFAULT_PATH
 )
 list(APPEND external_libs glm::glm)
+
+# Open3D
+#find_package(Open3D REQUIRED)
+find_package(Open3D HINTS ${CMAKE_INSTALL_PREFIX}/lib/CMake)
+list(APPEND Open3D_LIBRARIES dl)
+link_directories(${Open3D_LIBRARY_DIRS})
+list(APPEND external_libs ${Open3D_LIBRARIES})
+
 
 # ImGui
 set(imgui_dir ${external_source_dir}/imgui)
@@ -146,6 +158,9 @@ add_executable(${assignment_name} ${gloo_srcs} ${external_srcs} ${assignment_src
 
 target_link_libraries(${assignment_name} ${external_libs})
 target_compile_options(${assignment_name} PRIVATE ${cxx_warning_flags})
+
+#target_link_libraries(${assignment_name} ${Open3D_LIBRARIES})
+target_include_directories(${assignment_name} PUBLIC ${Open3D_INCLUDE_DIRS})
 
 if (MSVC)
     set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${assignment_name})

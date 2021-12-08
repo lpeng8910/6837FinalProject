@@ -1,38 +1,29 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/context.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/context.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/egl_context.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/egl_context.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/glx_context.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/glx_context.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/init.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/init.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/input.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/input.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/linux_joystick.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/monitor.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/monitor.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/osmesa_context.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/posix_thread.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/posix_thread.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/posix_time.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/posix_time.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/vulkan.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/vulkan.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/window.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/window.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/x11_init.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_init.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/x11_monitor.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/x11_window.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_window.c.o"
-  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/xkb_unicode.c" "/home/lisa/Documents/6.837/6837FinalProject/build/external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_C
-  "_GLFW_USE_CONFIG_H"
   )
 
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../external/src/glfw-3.3.2/include"
-  "../external/src/glfw-3.3.2/src"
-  "external/src/glfw-3.3.2/src"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/context.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/context.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/context.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/egl_context.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/egl_context.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/egl_context.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/glx_context.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/glx_context.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/glx_context.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/init.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/init.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/init.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/input.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/input.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/input.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/linux_joystick.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/linux_joystick.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/linux_joystick.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/monitor.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/monitor.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/monitor.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/osmesa_context.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/osmesa_context.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/osmesa_context.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/posix_thread.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/posix_thread.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/posix_thread.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/posix_time.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/posix_time.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/posix_time.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/vulkan.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/vulkan.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/vulkan.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/window.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/window.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/window.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/x11_init.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_init.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_init.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/x11_monitor.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_monitor.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_monitor.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/x11_window.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_window.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/x11_window.c.o.d"
+  "/home/lisa/Documents/6.837/6837FinalProject/external/src/glfw-3.3.2/src/xkb_unicode.c" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/xkb_unicode.c.o" "gcc" "external/src/glfw-3.3.2/src/CMakeFiles/glfw.dir/xkb_unicode.c.o.d"
   )
 
 # Targets to which this target links.
