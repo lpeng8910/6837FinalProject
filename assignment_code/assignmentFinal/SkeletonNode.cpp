@@ -3,6 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include <map>
+#include <chrono>
 
 #include "gloo/utils.hpp"
 #include "gloo/InputManager.hpp"
@@ -34,7 +35,7 @@ SkeletonNode::SkeletonNode(const std::string& filename)
 	LoadAllFiles(filename);
 	ComputeNormals();
 	InitializeTriangles();
-	DrawMeshLines();
+//	DrawMeshLines();
 
 //	auto new_mesh_ptr = mesh_node_ptr->GetComponentPtr<RenderingComponent>()->GetVertexObjectPtr()->SimplifyQuadricDecimation(900, 1000, 1);
 //	mesh_node_ptr->GetComponentPtr<RenderingComponent>()->SetVertexObject(new_mesh_ptr);
@@ -45,12 +46,20 @@ SkeletonNode::SkeletonNode(const std::string& filename)
 
 
 void SkeletonNode::Update(double delta_time) {
+	using std::chrono::high_resolution_clock;
+	using std::chrono::duration_cast;
+	using std::chrono::duration;
+	using std::chrono::milliseconds;
   // Prevent multiple toggle.
   static bool prev_released = true;
   if (InputManager::GetInstance().IsKeyPressed('S')) {
     if (prev_released) {
+    	auto start = std::chrono::high_resolution_clock::now();
+			num_triangles_ = int(num_triangles_*.5);
 			auto new_mesh_ptr = mesh_node_ptr->GetComponentPtr<RenderingComponent>()->GetVertexObjectPtr()->SimplifyQuadricDecimation(num_triangles_, 10, 1);
-			num_triangles_ = int(num_triangles_*.75);
+			auto stop = high_resolution_clock::now();
+			auto duration = duration_cast<milliseconds>(stop - start);
+			std::cout << "Simplification Takes: " + std::to_string(duration.count()) << std::endl;
 			mesh_node_ptr->GetComponentPtr<RenderingComponent>()->SetVertexObject(new_mesh_ptr);
 			ComputeNormals();
     }

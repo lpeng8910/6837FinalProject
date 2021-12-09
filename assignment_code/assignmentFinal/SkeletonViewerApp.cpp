@@ -51,7 +51,7 @@ void SkeletonViewerApp::SetupScene() {
   root.CreateComponent<LightComponent>(ambient_light);
 
   auto sun_light = std::make_shared<DirectionalLight>();
-  sun_light->SetDiffuseColor(glm::vec3(0.6f, 0.6f, 0.6f));
+  sun_light->SetDiffuseColor(glm::vec3(0.9f, 0.9f, 0.9f));
   sun_light->SetSpecularColor(glm::vec3(0.6f, 0.6f, 0.6f));
   sun_light->SetDirection(glm::vec3(-1.0f, -0.8f, -1.0f));
   auto sun_light_node = make_unique<SceneNode>();

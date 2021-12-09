@@ -82,12 +82,9 @@ public:
 		Eigen::Vector3d result_eig = -A_eig.ldlt().solve(b_eig);
 
 		glm::vec3 result = glm::inverse(-A_) * b_;
-//		std::cout<< "HIIIi" << std::endl;
-
 		assert (fabs(result_eig(0) - result[0]) < 1e-4 );
 		assert (fabs(result_eig(1) - result[1]) < 1e-4 );
 		assert (fabs(result_eig(2) - result[2]) < 1e-4 );
-		std::cout<< "passed assertions for minimum" << std::endl;
 
 		return result;
 	}
